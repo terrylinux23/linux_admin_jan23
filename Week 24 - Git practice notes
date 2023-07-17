@@ -1,17 +1,17 @@
-commit - checkpoint
+Commit - checkpoint
 HEAD
 REMOTE master
 Local master
 Branch
-checkout
-rebase
-MERGE
-PUSH
-PULL
+Checkout
+Rebase
+Merge
+Push
+Pull
 Stage
-stash
-clean
-origin
+Stash
+Clean
+Origin
 
  git-scm.com = scm - source control management
 =====================================================================================
@@ -23,13 +23,14 @@ STEPS
  sudo git --version
 =====================================================================================
 =====================================================================================
-If you haven’t already, set your local default git branch to main. You can do so by running: git config --global init.defaultBranch main
+If you haven’t already, set your local default git branch to main. 
+You can do so by running: git config --global init.defaultBranch main
 
 =============================================================================================
 
 Git Config
-[instructor@jan23 ~]$ git config --global user.name "Linux Instructor"
-[instructor@jan23 ~]$ git config --global user.email kwameosew09@gmail.com
+[instructor@jan23 ~]$ git config --global user.name "Your Namer"
+[instructor@jan23 ~]$ git config --global user.email youremail@.com
 
 Initializing Projects
 git init = creates invisible folder .git (in the project directory)
@@ -47,19 +48,17 @@ git log
 UNDERSTANDING ENVIRONMENT
 Git Information 
 commit 3fe5143d21b0ebe397be55af52ab59b69b5d6faf (Git hash - Unique ID for commit)
-Author: Linux Instructor <kwameosew09@gmail.com>
+Author: Linux Instructor <youremail>
 Date:   Fri Jul 14 00:29:50 2023 -0400
 
-Git Environments
-Moving files 
-
-- Working
-- Staging (dating b4 marriage)
-- Commit
+Git Environment
+- Working tree
+- Staging (think of it as dating before marriage)
+- Commit = 
 
 === File States ===
-~  Tracked ~ existed in the previous snapshots/commits
-~  Untracked
+~  Tracked - existed in the previous snapshots/commits
+~  Untracked -
 
 == Tracked Files ==
 ~ Unmodified - Files haven't changed since last commit
@@ -90,7 +89,7 @@ Why ignore files ?
 * System files
 
 Using .gitignore
-~ create .gitignore file in parent directory
+~ create .gitignore file in project directory 
 # touch .gitignore = add and commit
 Add filenames or directory names or extensions to be ignored to the .gitignore file by using vim or echo.
 
@@ -166,14 +165,14 @@ git rebase <branch>/<commit>
 Git branch
 
 copying a branch
-#git switch -c NAME OR
+#git switch -c NAME 
+OR
 #git checkout -b NAME
 
 
 ====MERGING====
 Sychronize changes. Merge from one branch into the current branch.
 git merge <branch>
-
 
 ====DELETING A BRANCH=====
 #git branch --delete NAME
@@ -258,12 +257,7 @@ git push -u origin main
 1245  git branch --set-upstream-to=origin/main 
  1246  git push -u origin origin/main 
 =====================================================================
-####################################
-#
-======================================================================
-Token 
-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
-==========================================================================
+#####################################################################
 
 ************************************************************************
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -271,10 +265,9 @@ Avoid git asking for username and password everytime
 change https url to ssh url
 
 # git remote set-url origin git@github.com:kwameosew/linux_admin_jan23.git
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ****************************************************************************
-
-
 
 
 GitHub TABS
@@ -321,6 +314,10 @@ FETCH
 git fetch
 
 PULL
+git pull
+
+PUSH
+git push
 
 
 
